@@ -22,7 +22,7 @@ const SectionContainer: React.FC<SectionContainerProps> = ({
     triggerOnce: false,
     rootMargin: "0px 0px",
   });
-  return (
+  return ( 
     <motion.section
       ref={ref}
       initial="hidden"
