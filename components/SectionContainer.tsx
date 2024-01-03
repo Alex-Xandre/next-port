@@ -19,7 +19,7 @@ const SectionContainer: React.FC<SectionContainerProps> = ({
   id,
 }) => {
   const [ref, inView] = useInView({
-    triggerOnce: false,
+    triggerOnce: false, 
     rootMargin: "0px 0px",
   });
   return ( 
