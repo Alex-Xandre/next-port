@@ -36,5 +36,5 @@ const SectionContainer: React.FC<SectionContainerProps> = ({
     </motion.section>
   );
 };
-
+ 
 export default SectionContainer;
