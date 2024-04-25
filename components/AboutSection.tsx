@@ -4,7 +4,7 @@ import SectionContainer from './SectionContainer';
 import Image from 'next/image';
 import Title from './utils/Title';
 import { motion } from 'framer-motion';
-import { containerVariantsTop } from '@/app/page';
+import { containerVariantsTop } from './json/containerVariantTops';
 import { useInView } from 'react-intersection-observer';
 import { locations } from './json/locationData';
 import { techImage } from './json/technologiesData';

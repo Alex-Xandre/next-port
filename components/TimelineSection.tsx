@@ -2,7 +2,7 @@ import React from 'react';
 import { timeLineData } from './json/timeLineData';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { containerVariantsTop } from '@/app/page';
+import { containerVariantsTop } from './json/containerVariantTops';
 import SectionContainer from './SectionContainer';
 import Title from './utils/Title';
 

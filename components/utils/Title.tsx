@@ -1,7 +1,7 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
-import { containerVariantsTop } from '@/app/page';
+import { containerVariantsTop } from '../json/containerVariantTops';
 interface TitleProps {
   text: string;
   cN?: string;

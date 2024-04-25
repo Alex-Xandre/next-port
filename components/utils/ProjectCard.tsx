@@ -3,7 +3,7 @@ import Button from './Button';
 import { useEffect, useRef, useState } from 'react'; // Import useRef
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { containerVariantsTop } from '@/app/page';
+import { containerVariantsTop } from '../json/containerVariantTops';
 import { ArrowUp, BackIcon } from './Icon';
 
 interface ProjectCardProps {
