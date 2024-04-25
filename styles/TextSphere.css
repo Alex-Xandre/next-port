@@ -1,5 +1,4 @@
-/* Importing google font  */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600;700;800;900&display=swap');
 
 .text-shpere {
   display: flex;
@@ -11,7 +10,7 @@
   display: inline-block;
   top: 0;
   left: 0;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 /* Change color of each text in sphere on hover   */
@@ -30,4 +29,3 @@
   font-weight: 600;
   transition: all ease-in-out;
 }
-

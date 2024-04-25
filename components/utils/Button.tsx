@@ -18,7 +18,7 @@ const Button: FC<ButtonProps> = ({ text, onClick, icon, cN, style }) => {
 
   return (
     <button
-      className={` ${cN} bg-[#00ffffff] font-[500] hover:bg-blue-600 hover:text-white ease-in-out  transition-all opacity-90 hover:opacity-100 md:w-fit py-2 px-4 rounded text-gray-800 m-0 flex align-center justify-center text-sm `}
+      className={` ${cN} bg-blue-100 font-[500] hover:bg-blue-200 hover:text-slate-800 ease-in-out  transition-all opacity-90 hover:opacity-100 md:w-fit py-2 px-4 rounded text-slate-800 m-0 flex align-center justify-center text-xs `}
       onClick={handleClick}
       style={style}
     >

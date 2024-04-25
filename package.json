@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@types/aos": "^3.0.7",
+    "aos": "^2.3.4",
     "framer-motion": "^10.16.4",
     "next": "14.0.2",
     "react": "^18",
@@ -17,7 +19,7 @@
     "react-three-fiber": "^6.0.13",
     "tag-cloud": "^2.0.1",
     "TagCloud": "^2.4.0",
-    "three": "^0.160.0"
+    "three": "^0.160.1"
   },
   "devDependencies": {
     "@types/node": "^20",
