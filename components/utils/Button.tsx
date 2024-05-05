@@ -1,4 +1,5 @@
-import { FC, MouseEvent, CSSProperties } from "react";
+'use client';
+import { FC, MouseEvent, CSSProperties } from 'react';
 
 interface ButtonProps {
   text: string;

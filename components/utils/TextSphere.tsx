@@ -7,38 +7,36 @@ import TagCloud from 'TagCloud';
 
 const TextShpere = () => {
   useEffect(() => {
-    return () => {
-      const container: any = '.tagcloud';
-      const texts = [
-        'HTML',
-        'CSS',
-        'SASS',
-        'JavaScript',
-        'React',
-        'Next',
-        'PHP',
-        'NodeJS',
-        'Express',
-        'Jquery',
-        'ES6',
-        'GIT',
-        'GITHUB',
-        'C#',
-        'Python',
-        'MongoDB',
-        'DBMS',
-        'Tailwind CSS',
-      ];
+    const container: any = '.tagcloud';
+    const texts = [
+      'HTML',
+      'CSS',
+      'SASS',
+      'JavaScript',
+      'React',
+      'Next',
+      'PHP',
+      'NodeJS',
+      'Express',
+      'Jquery',
+      'ES6',
+      'GIT',
+      'GITHUB',
+      'C#',
+      'Python',
+      'MongoDB',
+      'DBMS',
+      'Tailwind CSS',
+    ];
 
-      const options: any = {
-        radius: 300,
-        maxSpeed: 'normal',
-        initSpeed: 'fast',
-        keep: true,
-      };
-
-      TagCloud(container, texts, options);
+    const options: any = {
+      radius: 300,
+      maxSpeed: 'normal',
+      initSpeed: 'fast',
+      keep: true,
     };
+
+    TagCloud(container, texts, options);
   }, []);
 
   return (
