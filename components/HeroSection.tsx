@@ -44,32 +44,60 @@ const HeroSection = () => {
       id='home'
       cN='h-[calc(100dvh)]'
     >
-      <div className='md:flex-1 m-0 flex justify-center flex-col gap-5 mt-5 md:mt-0 w-full'>
-        <h1 className={`text-green-700 font-semibold text-sm opacity-${animationProgress >= 0 ? '100' : '0'}`}>
-          <span className='animate-pulse'>👋</span> Alexander Micua Here
+      <div className='md:flex-1 m-0 flex justify-center items-center flex-col gap-3 md:mt-0 w-full'>
+        <h1
+          className={`text-green-700 font-semibold flex items-center w-full text-center justify-center text-xl opacity-${
+            animationProgress >= 0 ? '100' : '0'
+          }`}
+        >
+          <span className='animate-pulse m-0'>👋</span> Alexander Micua here, you can call me Xandre
         </h1>
 
-        <h2 className={`text-green-700 font-semibold -mt-3 text-sm opacity-${animationProgress >= 2 ? '100' : '0'}`}>
-          <span className='animate-pulse'> 👉</span> You can call me Xandre
-        </h2>
-
-        <h2 className={`text-3xl font-extrabold uppercase text-start opacity-${animationProgress >= 3 ? '100' : '0'}`}>
+        <h2
+          className={` w-full  text-center  text-[3rem] font-extrabold uppercase  opacity-${
+            animationProgress >= 3 ? '100' : '0'
+          }`}
+        >
           Dream. Develop. Deliver.
         </h2>
         <h3
-          className='text-sm'
+          className='text-sm  text-center'
           id='typewriter'
           style={{ opacity: animationProgress >= 4 ? 1 : 0 }}
         ></h3>
+        <hr />
+        <div className=' flex gap-3'>
+          <Button
+            text='Browse Projects'
+            cN=' text-xs h-fit !bg-gray-800 !text-white opacity-80 hover:opacity-100'
+            style={{ opacity: animationProgress >= 5 ? 1 : 0 }}
+            onClick={() => {
+              const element = document.getElementById('projects');
+              if (element) {
+                element.scrollIntoView({
+                  behavior: 'smooth',
+                });
+              }
+            }}
+          />
 
-        <Button
-          text='Browse Projects'
-          cN=' text-xs h-fit !bg-gray-800 !text-white opacity-80 hover:opacity-100'
-          style={{ opacity: animationProgress >= 5 ? 1 : 0 }}
-        />
-      </div>
-      <div className='md:flex-1 m-0 h-full   flex items-center justify-center overflow-hidden md:overflow-auto -mt-20 md:mt-0 '>
-        <TextShpere />
+          <a
+            href='https://github.com/Alex-Xandre'
+            target='_blank'
+            rel='noopener noreferrer'
+            className=' bg-blue-100 font-[500] hover:bg-blue-200 hover:text-slate-800 ease-in-out  transition-all opacity-90 hover:opacity-100 md:w-fit py-2 px-4 rounded text-slate-800 m-0 flex align-center justify-center text-xs '
+          >
+            Github
+          </a>
+          <a
+            href='https://www.linkedin.com/in/alexander-micua-04657a217/'
+            target='_blank'
+            rel='noopener noreferrer'
+            className=' bg-white font-[500] hover:bg-blue-200 text-blue-600 hover:text-slate-800 ease-in-out  transition-all opacity-90 hover:opacity-100 md:w-fit py-2 px-4 rounded text-slate-800 m-0 flex align-center justify-center text-xs '
+          >
+            Linkedin
+          </a>
+        </div>
       </div>
     </SectionContainer>
   );

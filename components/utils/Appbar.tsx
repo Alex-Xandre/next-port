@@ -45,7 +45,6 @@ const Appbar = () => {
     };
   }, []);
 
-  console.log(Menu.findIndex((x) => x.url === activeId));
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {

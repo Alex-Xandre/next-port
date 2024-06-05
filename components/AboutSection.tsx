@@ -131,7 +131,7 @@ const AboutSection = () => {
                   height={100}
                   className='w-8 h-8 object-contain '
                 />
-                <p className='hidden group-hover:block absolute -bottom-2 font-medium text-primary text-sm -right-2 bg-white'>
+                <p className='hidden group-hover:block absolute -bottom-2 font-medium text-primary text-xs -right-2 bg-white'>
                   {techs.alt}
                 </p>
               </div>
