@@ -70,7 +70,6 @@ const HeroSection = () => {
           <Button
             text='Browse Projects'
             cN=' text-xs h-fit !bg-gray-800 !text-white opacity-80 hover:opacity-100'
-            style={{ opacity: animationProgress >= 5 ? 1 : 0 }}
             onClick={() => {
               const element = document.getElementById('projects');
               if (element) {
