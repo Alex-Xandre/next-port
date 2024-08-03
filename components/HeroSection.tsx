@@ -46,11 +46,13 @@ const HeroSection = () => {
     >
       <div className='md:flex-1 m-0 flex justify-center items-center flex-col gap-3 md:mt-0 w-full'>
         <h1
-          className={`text-green-700 font-semibold flex items-center w-full text-center justify-center text-xl opacity-${
+          className={`text-green-700 font-semibold flex items-center flex-col w-full text-center justify-center text-xl opacity-${
             animationProgress >= 0 ? '100' : '0'
           }`}
         >
-          <span className='animate-pulse m-0'>👋</span> Alexander Micua here, you can call me Xandre
+          <span className='animate-pulse m-0'>👋 👋 👋</span>
+          <span>Alexander Micua here,</span>
+          <span>you can call me Xandre</span>
         </h1>
 
         <h2

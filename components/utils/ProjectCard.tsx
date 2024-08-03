@@ -181,12 +181,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ data, onClick, selectedIndex,
             <div className='flex flex-wrap gap-2'>
               <p className='text-sm font-bold mt-5 w-full'>Tech Stack </p>
               {data.stack?.map((x, index) => (
-                <div
+                <span
                   className='text-[10px] m-0 rounded-md bg-blue-100 py-1 px-2 flex items-center gap-2'
                   key={index}
                 >
-                  <p className='h-2 w-2 animate-pulse bg-green-500 rounded-full'></p> {x}
-                </div>
+                  <span className='h-2 w-2 animate-pulse bg-green-500 rounded-full'></span> {x}
+                </span>
               ))}
             </div>
           </div>
