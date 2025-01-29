@@ -42,8 +42,6 @@
   /* animation: wave-animation 1s infinite linear; */
 }
 
-
-
 @keyframes wave-animation {
   0% {
     transform: translateX(0);
@@ -56,6 +54,17 @@
   border: 2px solid transparent;
 }
 .box:hover {
+  --border-angle: 0turn;
+  --main-bg: conic-gradient(from var(--border-angle), #fff, #fff 5%, #fff 60%, #fff 95%);
+  border: solid 2px transparent;
+  border-radius: 1;
+  --gradient-border: conic-gradient(from var(--border-angle), transparent 25%, #bfdbfe, #bfdbfe 99%, transparent);
+  background: var(--main-bg) padding-box, var(--gradient-border) border-box, var(--main-bg) border-box;
+  background-position: center center;
+  animation: bg-spin 2s linear infinite;
+}
+
+.box-selected{
   --border-angle: 0turn;
   --main-bg: conic-gradient(from var(--border-angle), #fff, #fff 5%, #fff 60%, #fff 95%);
   border: solid 2px transparent;
@@ -172,4 +181,24 @@
 
 .animate-shake:hover {
   animation: shake 0.3s ease-in-out 1; /* Play the animation 3 times */
+}
+
+@layer utilities {
+  @variants responsive {
+    .masonry {
+      column-gap: 1.5em;
+      column-count: 1;
+    }
+    .masonry-sm {
+      column-gap: 1.5em;
+      column-count: 2;
+    }
+    .masonry-md {
+      column-gap: 1.5em;
+      column-count: 3;
+    }
+    .break-inside {
+      break-inside: avoid;
+    }
+  }
 }
