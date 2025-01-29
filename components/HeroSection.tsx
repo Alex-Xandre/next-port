@@ -44,6 +44,12 @@ const HeroSection = () => {
       id='home'
       cN='h-[calc(100dvh)]'
     >
+      <div
+        className='absolute inset-0 bg-cover hidden xl:block opacity-20'
+        style={{
+          backgroundImage: 'url("https://res.cloudinary.com/dgb3br9x6/image/upload/v1738160825/bg_flolhz.png")',
+        }}
+      ></div>
       <div className='md:flex-1 m-0 flex justify-center items-center flex-col gap-3 md:mt-0 w-full'>
         <h1
           className={`text-green-700 font-semibold flex items-center flex-col w-full text-center justify-center text-xl opacity-${

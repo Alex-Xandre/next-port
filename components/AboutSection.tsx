@@ -22,27 +22,41 @@ const containerVariantsRight = {
 };
 
 const AboutSection = () => {
-  const [ref, inView] = useInView({
+
+  const [refTop, inViewTop] = useInView({
     triggerOnce: true,
-    rootMargin: '0px 0px',
+    rootMargin: '0px 0px -100px 0px',
+    threshold: 0,
+  });
+
+  const [refLeft, inViewLeft] = useInView({
+    triggerOnce: true,
+    rootMargin: '0px 0px -100px 0px',
+    threshold: 0,
+  });
+
+  const [refRight, inViewRight] = useInView({
+    triggerOnce: true,
+    rootMargin: '0px 0px -100px 0px',
+    threshold: 0,
   });
 
   return (
     <SectionContainer
-      cN='bg-gray-50 py-20  '
+      cN='bg-gray-50 py-20'
       id='about'
     >
       <Title
         text='Who is Xandre?'
         cN='mb-10'
       />
-      <div className='w-full lg:flex-1 m-0 flex md:items-center  flex-col gap-5 text-sm'>
+      <div className='w-full lg:flex-1 m-0 flex md:items-center flex-col gap-5 text-sm'>
         <motion.div
           className='w-full md:w-96 flex -mt-10'
           variants={containerVariantsTop}
-          ref={ref}
+          ref={refTop}
           initial='hidden'
-          animate={inView ? 'visible' : 'hidden'}
+          animate={inViewTop ? 'visible' : 'hidden'}
           transition={{ delay: 0.5, duration: 0.1 }}
         >
           <Image
@@ -57,20 +71,19 @@ const AboutSection = () => {
       <motion.div
         className='lg:w-1/2 m-0 flex items-start flex-col gap-6 mt-20 lg:mt-0'
         variants={containerVariantsTop}
-        ref={ref}
+        ref={refTop}
         initial='hidden'
-        animate={inView ? 'visible' : 'hidden'}
+        animate={inViewTop ? 'visible' : 'hidden'}
         transition={{ delay: 0.5, duration: 0.1 }}
       >
-        <h2 className={`  flex items-start gap-1`}>
+        <h2 className='flex items-start gap-1'>
           <span className='text-lg m-0 -ml-1'>🎓 </span> Graduated Last July 2022, worked on multiple projects for
           clients locally and internationally, helping them grow their startups and collaborating on future business
-          ventures. With over 2 years of work experience and close training with a senior developer.
+          ventures. With over 3 years of work experience and close training with a senior developer.
         </h2>
 
-        <h2 className={`  flex items-start gap-1`}>
-          <span> 💼</span> Currently working as a Full-Stack Developer in a startup company in Las Vegas with a team of
-          5.
+        <h2 className='flex items-start gap-1'>
+          <span> 💼</span> Currently working as a FrontEnd Developer in a company in Belgium, Europe.
         </h2>
 
         <h2 className='text-sm font-semibold'>✔️ Successfully delivered 10+ international projects.</h2>
@@ -84,7 +97,7 @@ const AboutSection = () => {
               key={index}
               className={`text-sm flex items-center group `}
             >
-              <p className='h-1 rounded-full w-1 bg-green-500'></p>
+              <span className='h-1 rounded-full w-1 bg-green-500'></span>
               &nbsp;
               <a
                 href={x.url}
@@ -98,26 +111,25 @@ const AboutSection = () => {
                 <ArrowUp />
               </span>{' '}
               &nbsp; &nbsp;
-              {/* {index !== socialData.length - 1 && ','} */}
             </p>
           ))}
         </div>
       </motion.div>
 
       <motion.div
-        className='w-full lg:w-1/2 m-0 mt-24 border border-gray-50 p-4 rounded-xl  '
+        className='w-full lg:w-1/2 m-0 mt-24 border border-gray-50 p-4 rounded-xl'
         variants={containerVariantsLeft}
-        ref={ref}
+        ref={refLeft}
         initial='hidden'
-        animate={inView ? 'visible' : 'hidden'}
+        animate={inViewLeft ? 'visible' : 'hidden'}
         transition={{ delay: 0.5, duration: 0.1 }}
       >
         <Title
           text='Technologies I work with'
-          cN='mb-5  text-base '
+          cN='mb-5 text-base'
         />
 
-        <div className='flex flex-wrap gap-3 items-center justify-center '>
+        <div className='flex flex-wrap gap-3 items-center justify-center'>
           {techImage.map((techs, index: number) => {
             return (
               <div
@@ -129,7 +141,7 @@ const AboutSection = () => {
                   alt={techs.alt}
                   width={120}
                   height={100}
-                  className='w-8 h-8 object-contain '
+                  className='w-8 h-8 object-contain'
                 />
                 <p className='hidden group-hover:block absolute -bottom-2 font-medium text-primary text-xs -right-2 bg-white'>
                   {techs.alt}
@@ -140,18 +152,18 @@ const AboutSection = () => {
         </div>
       </motion.div>
       <motion.div
-        className='w-full lg:w-1/2 m-0 mt-24 border border-gray-50 p-4 rounded-xl  '
+        className='w-full lg:w-1/2 m-0 mt-24 border border-gray-50 p-4 rounded-xl'
         variants={containerVariantsRight}
-        ref={ref}
+        ref={refRight}
         initial='hidden'
-        animate={inView ? 'visible' : 'hidden'}
+        animate={inViewRight ? 'visible' : 'hidden'}
         transition={{ delay: 0.5, duration: 0.1 }}
       >
         <Title
           text='Clients I work with'
-          cN='mb-5 text-base '
+          cN='mb-5 text-base'
         />
-        <div className='w-fit flex m-auto  relative '>
+        <div className='w-fit flex m-auto relative'>
           <Image
             src='https://res.cloudinary.com/dgb3br9x6/image/upload/v1713776463/worldmap_nhvikp.png'
             width={300}
@@ -163,14 +175,13 @@ const AboutSection = () => {
             <div
               key={index}
               className={`text-sm absolute 
-
           ${location.left} ${location.top} ${location.right} ${location.bottom}
             } flex flex-wrap items-center gap-1 group `}
             >
               <div className='w-1 h-1 rounded-full bg-green-600 animate-pulse'></div>
               <p className='bg-white rounded-xl px-1 text-[9px]'>{location.name}</p>
 
-              <p className='opacity-0 group-hover:opacity-100 w-24 px-2 text-[9px] transition-opacity ease-in-out   right-0 absolute  flex flex-shrink-0 bg-white rounded-xl'>
+              <p className='opacity-0 group-hover:opacity-100 w-24 px-2 text-[9px] transition-opacity ease-in-out right-0 absolute flex flex-shrink-0 bg-white rounded-xl'>
                 ✔️ {location.totalProjects} Projects
               </p>
             </div>
