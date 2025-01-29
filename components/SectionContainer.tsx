@@ -6,6 +6,7 @@ interface SectionContainerProps {
   children: ReactNode;
   cN?: String;
   id?: String;
+  style?: any;
 }
 
 const containerVariants: Variants = {
@@ -13,23 +14,24 @@ const containerVariants: Variants = {
   visible: { opacity: 1, y: 0 },
 };
 
-const SectionContainer: React.FC<SectionContainerProps> = ({ children, cN, id }) => {
+const SectionContainer: React.FC<SectionContainerProps> = ({ children, cN, id, style }) => {
   const [ref, inView] = useInView({
     triggerOnce: false,
     rootMargin: '0px 0px',
   });
   return (
-    <motion.section
+    <motion.div
+      style={style}
       ref={ref}
       initial='hidden'
       animate={inView ? 'visible' : 'hidden'}
       variants={containerVariants}
       id={`${id}`}
       transition={{ delay: 0.5, duration: 0.25 }}
-      className={`flex w-full relative flex-wrap px-4 overflow-hidden lg:px-12 2xl:px-44 ${cN}`}
+      className={`flex w-full relative flex-wrap px-4 overflow-y-auto lg:px-12 2xl:px-44 ${cN}`}
     >
       {children}
-    </motion.section>
+    </motion.div>
   );
 };
 
