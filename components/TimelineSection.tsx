@@ -49,9 +49,9 @@ const TimeLineItem = ({ index, item }: any) => {
       </div>
 
       <div className='w-[calc(100%-3rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-slate-200 shadow m-0'>
-        <div className='flex items-center justify-between space-x-2 mb-1'>
+        <div className='flex lg:items-center lg:justify-between  mb-1 flex-col lg:flex-row '>
           <div className='font-bold text-slate-900 text-start m-0'>{item.title}</div>
-          <time className='font-medium text-indigo-500'>{item.date}</time>
+          <time className='font-medium text-indigo-500 text-sm text-start w-full lg:w-fit m-0'>{item.date}</time>
         </div>
         <div className='text-slate-500'>{item.description}</div>
       </div>
