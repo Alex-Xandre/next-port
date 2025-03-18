@@ -27,17 +27,26 @@ const TextShpere = () => {
       'MongoDB',
       'DBMS',
       'Tailwind CSS',
+      "Docker",
+      "Postgress"
     ];
-
+  
     const options: any = {
       radius: 300,
       maxSpeed: 'normal',
       initSpeed: 'fast',
       keep: true,
     };
-
+  
+    // Clear any existing content in the container before initializing TagCloud
+    const tagCloudContainer = document.querySelector(container);
+    if (tagCloudContainer) {
+      tagCloudContainer.innerHTML = ''; 
+    }
+  
     TagCloud(container, texts, options);
   }, []);
+  
 
   return (
     <>

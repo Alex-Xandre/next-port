@@ -5,7 +5,7 @@ import SectionContainer from './SectionContainer';
 const FooterSection = () => {
   return (
     <SectionContainer cN={'py-20'}>
-      <div className='border-t w-full py-5 flex flex-col md:flex-col items-center justify-between'>
+      <div className='border-t w-full py-5 flex flex-col md:flex-col items-center justify-between px-3 lg:px-0'>
         <h1>
           Looking for A software Developer? Send me an{' '}
           <span>

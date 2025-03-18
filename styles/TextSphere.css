@@ -15,7 +15,7 @@
 
 /* Change color of each text in sphere on hover   */
 .tagcloud--item {
-  color: #00ffffff;
+ 
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 0.0625em;
@@ -24,7 +24,7 @@
 }
 
 .tagcloud--item:hover {
-  color: #ff6347;
+  color: #00ffffff;
   font-size: 1.3em;
   font-weight: 600;
   transition: all ease-in-out;

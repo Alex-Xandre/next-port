@@ -37,7 +37,7 @@ const TimeLineItem = ({ index, item }: any) => {
   return (
     <motion.div
       key={index}
-      className='relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active m-0 '
+      className='relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active m-0 overflow-hidden '
       variants={containerVariantsTop}
       ref={ref}
       initial='hidden'

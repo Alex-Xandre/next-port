@@ -43,7 +43,7 @@ const AboutSection = () => {
 
   return (
     <SectionContainer
-      cN='bg-gray-50 py-20'
+      cN='bg-gray-50 py-20 px-3 lg:px-0'
       id='about'
     >
       <Title
@@ -86,9 +86,9 @@ const AboutSection = () => {
           <span> 💼</span> Currently working as a FrontEnd Developer in a company in Belgium, Europe.
         </h2>
 
-        <h2 className='text-sm font-semibold'>✔️ Successfully delivered 10+ international projects.</h2>
+        <h2 className='text-sm font-semibold'>✔️ Successfully delivered 15+ international projects.</h2>
         <h2 className='text-sm font-semibold'>✔️ Brought and assisted 5 startup ideas to life.</h2>
-        <h2 className='text-sm font-semibold'>✔️ Completed 15+ Philippine-based systems.</h2>
+        <h2 className='text-sm font-semibold'>✔️ Completed 35+ Philippine-based systems.</h2>
 
         <div className='w-full flex flex-wrap'>
           <p className='m-0 text-sm font-semibold w-full mb-3'>Social Links</p>
