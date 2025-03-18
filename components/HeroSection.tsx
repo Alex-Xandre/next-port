@@ -70,7 +70,7 @@ const HeroSection = () => {
 
           <div className=" rounded flex-grow">
             {projectData.slice(0, 4).map((item) => (
-              <ProjectCard data={item} />
+              <ProjectCard data={item} key={item} />
             ))}
           </div>
         </div>
