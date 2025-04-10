@@ -118,7 +118,7 @@ const Appbar = () => {
             </div>
           </header>
 
-          <ul className="m-0 mt-5 md:mt-0  md:gap-4  px-0 md:px-10  md:hidden">
+          <ul className="m-0 mt-5 md:mt-0  md:gap-4  px-0 md:px-10  md:hidden ">
             {Menu?.map((x, index) => {
               const isActive = x.url === activeId;
 
@@ -142,7 +142,7 @@ const Appbar = () => {
         </div>
       </nav>
 
-      <ul className="m-0 mt-5 md:mt-0  md:gap-4  px-0 md:px-10  hidden lg:flex">
+      <ul className="m-0 mt-5 md:mt-0  md:gap-4  px-0 md:px-10  hidden lg:flex 2xl:px-44">
         {Menu?.map((x, index) => {
           const isActive = x.url === activeId;
 

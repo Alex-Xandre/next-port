@@ -14,7 +14,7 @@ const TimeLineSection = () => {
     >
       <Title text='Experience' />
 
-      <div className='space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent mt-8 '>
+      <div className='space-y-8  relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent mt-8 '>
         <div className='absolute top-0 left-1/2 transform -translate-x-px w-0.5 h-full bg-gradient-to-b from-transparent via-slate-300 to-transparent' />
         {timeLineData.map((item, index) => (
           <TimeLineItem
@@ -44,7 +44,7 @@ const TimeLineItem = ({ index, item }: any) => {
       animate={inView ? 'visible' : 'hidden'}
       transition={{ delay: 0.5, duration: 0.1 }}
     >
-      <div className=' text-base m-0 flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 group-[.is-active]:bg-gray-50 text-slate-500 group-[.is-active]:text-emerald-50 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2'>
+      <div className='text-sm m-0 flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 group-[.is-active]:bg-gray-50 text-slate-500 group-[.is-active]:text-emerald-50 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2'>
         {item?.ic}
       </div>
 
