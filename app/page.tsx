@@ -10,6 +10,7 @@ import FooteSection from '@/components/FooteSection';
 export default function Home() {
   return (
     <MainContainer>
+      
       <HeroSection />
       <AboutSection />
       <ProjectSection />

@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Appbar from "@/components/sidebar/Appbar";
 import { SidebarProvider } from "@/components/sidebar/sidebar-context.";
+import { Analytics } from "@vercel/analytics/next";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -21,6 +22,7 @@ export default function RootLayout({
         <body className={inter.className}>
           <Appbar />
           {children}
+          <Analytics />
         </body>
       </SidebarProvider>
     </html>
