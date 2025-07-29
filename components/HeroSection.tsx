@@ -59,7 +59,7 @@ const HeroSection = () => {
 
   return (
     <SectionContainer id='home'>
-      <div className='md:flex-1 m-0 flex flex-col lg:flex-row  gap-3 md:mt-0 w-full px-3 lg:px-0'>
+      <div className='md:flex-1 m-0 flex flex-col lg:flex-row  gap-3 md:mt-0 w-full px-3 lg:px-0  pt-3 xl:pt-20 '>
         <div className='m-0 mt-5 flex-1'>
           <div className='text-sm font-medium flex items-center justify-between'>
             <span className='m-0'>Recent Projects</span>
@@ -82,31 +82,33 @@ const HeroSection = () => {
 
         <div className=' pb-20 flex-1 w-full'>
           <TextShpere />
-          <div className=' flex gap-3 items-center justify-center '>
+          <div className=' flex gap-3 items-center justify-center flex-wrap '>
             <Button
               text='Browse Projects'
-              cN=' text-xs h-fit !bg-gray-800 !text-white opacity-80 hover:opacity-100'
+              cN=' text-xs h-fit !bg-gray-800 !text-white opacity-80 hover:opacity-100 w-[calc(50%-10px)] md:w-fit'
               onClick={redirectProject}
-              icon={<SquareArrowOutUpRight className='h-3.5 ml-2'/>}
+              icon={<SquareArrowOutUpRight className='h-3.5 ml-2' />}
             />
 
             <a
               href='https://github.com/Alex-Xandre'
               target='_blank'
               rel='noopener noreferrer'
-              className=' bg-blue-100 font-[500] hover:bg-blue-200 hover:text-slate-800 ease-in-out  transition-all opacity-90 hover:opacity-100 md:w-fit py-2 px-4 rounded text-slate-800 m-0 flex align-center justify-center text-xs '
+              className=' bg-blue-100 font-[500] hover:bg-blue-200 hover:text-slate-800 ease-in-out  transition-all opacity-90 hover:opacity-100 md:w-fit py-2 px-4 rounded text-slate-800 m-0 flex align-center justify-center text-xs
+              w-[calc(50%-10px)] 
+              '
             >
               Github
-              <GithubIcon className='h-3.5 ml-2'/>
+              <GithubIcon className='h-3.5 ml-2' />
             </a>
             <a
               href='https://www.linkedin.com/in/alexander-micua-04657a217/'
               target='_blank'
               rel='noopener noreferrer'
-              className='border bg-white font-[500] hover:bg-blue-200 text-blue-600 hover:text-slate-800 ease-in-out  transition-all opacity-90 hover:opacity-100 md:w-fit py-2 px-4 rounded text-slate-800 m-0 flex align-center justify-center text-xs '
+              className='border bg-white font-[500] w-[calc(100%-10px)] items-center hover:bg-blue-200  hover:text-slate-800 ease-in-out  transition-all opacity-90 hover:opacity-100 md:w-fit py-2 px-4 rounded text-slate-800 m-0 flex align-center justify-center text-xs '
             >
               Linkedin
-              <BsLinkedin className='h-3.5 ml-2'/>
+              <BsLinkedin className='h-3.5 ml-2' />
             </a>
           </div>
         </div>
@@ -151,11 +153,11 @@ const HeroSection = () => {
             </div>
           </div>
 
-          <div className='text-sm font-medium flex items-center justify-between'>
+          <div className='text-sm font-medium flex items-center justify-between '>
             <span className='m-0 mt-5'>Interest and Hobbies</span>
           </div>
 
-          <h2 className='text-sm mt-5'>
+          <h2 className='text-sm mt-5 pb-6'>
             Cybersecurity, Korean and Japanese languages, Forensics, Blockchain technology, Web3, and day trading.
           </h2>
         </div>

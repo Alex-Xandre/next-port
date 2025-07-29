@@ -1,3 +1,4 @@
+"use client"
 import React, { useState } from 'react';
 import SectionContainer from './SectionContainer';
 import Title from './utils/Title';
@@ -16,7 +17,7 @@ const ProjectSection = () => {
       <Title text=" Projects" />
       <div className="masonry sm:masonry-sm md:masonry-md  xl:max-w-3/4 mt-10">
         {projectData.map((x, index) => (
-          <div key={x.title} className="m-0" onClick={() => setSelectedCardIndex(-1)}>
+          <div key={index} className="m-0" onClick={() => setSelectedCardIndex(-1)}>
             <div
               className={`${
                 selectedCardIndex === index && 'm-auto bg-white shadow-md rounded-xl'

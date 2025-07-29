@@ -2,7 +2,7 @@
 import React, { ReactNode } from 'react';
 
 const MainContainer: React.FC<{ children: ReactNode }> = ({ children }) => {
-  return <main className='flex min-h-screen flex-col items-center justify-between'>{children}</main>;
+  return <main className='flex  flex-col items-center justify-between overflow-x-hidden overflow-y-hidden'>{children}</main>;
 };
 
 export default MainContainer;

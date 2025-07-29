@@ -50,7 +50,7 @@ const AboutSection = () => {
         text='Who is Xandre?'
         cN='mb-10'
       />
-      <div className='w-full lg:flex-1 m-0 flex md:items-center flex-col gap-5 text-sm'>
+      <div className='w-full lg:flex-1 m-0 flex justify-center items-center flex-col gap-5 text-sm'>
         <motion.div
           className='w-full md:w-96 flex -mt-10'
           variants={containerVariantsTop}
@@ -60,11 +60,11 @@ const AboutSection = () => {
           transition={{ delay: 0.5, duration: 0.1 }}
         >
           <Image
-            src='https://res.cloudinary.com/dfhhkd04c/image/upload/v1703333902/20220802_150717-removebg-preview_hsnqqk.png'
+            src='https://res.cloudinary.com/dfhhkd04c/image/upload/v1753756678/519598439_1493608591625050_6725044023529033978_n_cdcy56.jpg'
             alt='banner 2'
             width={300}
             height={300}
-            className='rounded-b-xl'
+            className='rounded-b-xl mt-3'
           />
         </motion.div>
       </div>
