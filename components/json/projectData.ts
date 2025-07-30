@@ -1,7 +1,10 @@
 export const projectData = [
   {
     title: 'ELMS',
-    banner: 'https://res.cloudinary.com/dfhhkd04c/image/upload/v1753855124/els-2_vkx4vf.png',
+    banner: [
+      'https://res.cloudinary.com/dfhhkd04c/image/upload/v1753859077/els-1_eiecqj.png',
+      'https://res.cloudinary.com/dfhhkd04c/image/upload/v1753855124/els-2_vkx4vf.png',
+    ],
     web_link: 'https://e-learning-two-opal.vercel.app/',
     stack: ['MongoDB', 'Express', 'React', 'Node.js', 'Tailwind CSS'],
     description:
@@ -18,21 +21,23 @@ export const projectData = [
     ],
     type: 'Web Development',
     testAccount: ['2', '1'],
+    github: 'https://github.com/Alex-Xandre/els.git',
   },
 
   {
     title: 'Membo',
-    banner: 'https://res.cloudinary.com/dnhka2l80/image/upload/v1742269695/membo_zbz5be.png',
+    banner: ['https://res.cloudinary.com/dnhka2l80/image/upload/v1742269695/membo_zbz5be.png'],
     web_link: 'https://membo-nine.vercel.app/',
     stack: ['MongoDB', 'Express', 'React', 'Node JS', 'Tailwind CSS'],
     description: 'E-commerce Website that focus mainly on Event management system products with payment integrations.',
     features: [],
     type: 'Web Development',
+    github: 'https://github.com/Alex-Xandre/membo',
   },
 
   {
     title: 'Anywear Fashion',
-    banner: 'https://res.cloudinary.com/dfhhkd04c/image/upload/v1744296663/anywear_vsoky7.png',
+    banner: ['https://res.cloudinary.com/dfhhkd04c/image/upload/v1744296663/anywear_vsoky7.png'],
     web_link: 'https://www.anywear-fashion-trading.com/',
     stack: ['MongoDB', 'Express', 'React', 'Node JS', 'Tailwind CSS', 'React Native'],
     description: 'HR Management System that handles HR related task and progress quotas',
@@ -42,7 +47,7 @@ export const projectData = [
 
   {
     title: 'Planteria',
-    banner: 'https://res.cloudinary.com/dfhhkd04c/image/upload/v1700539674/proj_1_fttl7o.png',
+    banner: ['https://res.cloudinary.com/dfhhkd04c/image/upload/v1700539674/proj_1_fttl7o.png'],
     stack: ['MongoDB', 'Express', 'React', 'Node JS', 'Tailwind CSS'],
     description: 'E-commerce Website that focus mainly on plant products with payment integrations.',
     web_link: 'https://bukal-garden-planteria.store/',
@@ -58,7 +63,7 @@ export const projectData = [
 
   {
     title: 'DineEase',
-    banner: 'https://res.cloudinary.com/dfhhkd04c/image/upload/v1690989227/proj-3-removebg-preview_yrzyse_1_iytqvm.png',
+    banner: ['https://res.cloudinary.com/dfhhkd04c/image/upload/v1690989227/proj-3-removebg-preview_yrzyse_1_iytqvm.png'],
     stack: ['MongoDB', 'Express', 'React', 'Node JS', 'Tailwind CSS'],
     description: 'A Restaurant Management System for a Samgyupsal Business.',
     web_link: 'https://dineease-8pbh.onrender.com/',
@@ -73,7 +78,7 @@ export const projectData = [
 
   {
     title: 'Yes-O Calaca',
-    banner: 'https://res.cloudinary.com/dfhhkd04c/image/upload/v1700542829/proj2_rnhyco.png',
+    banner: ['https://res.cloudinary.com/dfhhkd04c/image/upload/v1700542829/proj2_rnhyco.png'],
     stack: ['MongoDB', 'Express', 'React', 'Node JS', 'Tailwind CSS'],
     description: 'Volunteer Management System of Youth for Environment in Schools.',
     web_link: 'https://www.yes-o-calaca-shs.com/',
@@ -88,7 +93,7 @@ export const projectData = [
 
   {
     title: 'MTP-Educational Assistance',
-    banner: 'https://res.cloudinary.com/dfhhkd04c/image/upload/v1700539674/proj_1_fttl7o.png',
+    banner: ['https://res.cloudinary.com/dfhhkd04c/image/upload/v1700539674/proj_1_fttl7o.png'],
     stack: ['MongoDB', 'Express', 'React', 'Node JS', 'Tailwind CSS'],
     description: 'Automated Scholarship Application System with Chat Feature.',
     web_link: 'https://www.mtp-educational-assistance.com/',
@@ -102,7 +107,7 @@ export const projectData = [
   },
   {
     title: 'As Glass Aluminum',
-    banner: 'https://res.cloudinary.com/dfhhkd04c/image/upload/v1691459923/OT12YY1_wgu70c.png',
+    banner: ['https://res.cloudinary.com/dfhhkd04c/image/upload/v1691459923/OT12YY1_wgu70c.png'],
     stack: ['MongoDB', 'Express', 'React', 'Node JS', 'Styled Components'],
     description: 'A Ecommerce for a Glass and Aluminum Business on the Philipines',
     web_link: 'https://glass-aluminum.onrender.com/',
@@ -116,7 +121,7 @@ export const projectData = [
   },
   {
     title: 'IRemember',
-    banner: 'https://res.cloudinary.com/dfhhkd04c/image/upload/v1703333491/OWINKS1_zhzgcg.png',
+    banner: ['https://res.cloudinary.com/dfhhkd04c/image/upload/v1703333491/OWINKS1_zhzgcg.png'],
     stack: ['MongoDB', 'Express', 'React', 'Node JS', 'Tailwind CSS'],
     description: 'An End-of-Life Planner and Online Pet Memorial System for Pet Owners.',
     web_link: 'https://www.ipetmemorial-iremember.com/',

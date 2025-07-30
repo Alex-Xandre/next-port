@@ -51,8 +51,6 @@ const Appbar = () => {
     };
   }, []);
 
-  console.log(activeId);
-
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
