@@ -42,7 +42,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       className={`break-inside m-0  w-full group bg-gray-50  ${
         selectedIndex !== -1 && "opacity-80 group-hover:opacity-100"
       }
-      ${selectedIndex === dataIndex && "!opacity-100 box-selected"}
+      ${selectedIndex === dataIndex && "!opacity-100 "}
       `}
       layout
       tabIndex={0}
@@ -52,7 +52,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         animate={{ rotateY: 0 }}
         exit={{ rotateY: 180 }}
         transition={{ duration: 0.1 }}
-        className="box"
+        // className="box"
       >
         <div className="w-full">
           <Image
