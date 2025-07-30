@@ -13,7 +13,7 @@ const ProjectSection = () => {
   };
 
   return (
-    <SectionContainer cN="py-20" id="projects">
+    <SectionContainer cN="py-20 px-2" id="projects">
       <Title text=" Projects" />
       <div className="masonry sm:masonry-sm md:masonry-md  xl:max-w-3/4 mt-10">
         {projectData.map((x, index) => (

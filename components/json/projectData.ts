@@ -1,5 +1,26 @@
 export const projectData = [
   {
+    title: 'ELMS',
+    banner: 'https://res.cloudinary.com/dfhhkd04c/image/upload/v1753855124/els-2_vkx4vf.png',
+    web_link: 'https://e-learning-two-opal.vercel.app/',
+    stack: ['MongoDB', 'Express', 'React', 'Node.js', 'Tailwind CSS'],
+    description:
+      'A full-featured E-commerce and Event Learning Management System focused on selling educational event-related products and managing student engagement, with integrated payment solutions.',
+    features: [
+      'Module creation and management',
+      'Interactive quizzes and assessments',
+      'Automatic quiz scoring and feedback',
+      'Student profile and progress tracking',
+      'Role-based access (admin, instructor, student)',
+      'Secure payment integration for course/event purchases',
+      'Event scheduling and calendar system',
+      'Admin dashboard with analytics',
+    ],
+    type: 'Web Development',
+    testAccount: ['2', '1'],
+  },
+
+  {
     title: 'Membo',
     banner: 'https://res.cloudinary.com/dnhka2l80/image/upload/v1742269695/membo_zbz5be.png',
     web_link: 'https://membo-nine.vercel.app/',

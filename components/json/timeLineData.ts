@@ -1,9 +1,9 @@
 export const timeLineData = [
   {
-    title: 'Front-End Developer',
-    date: 'June 2023 - Present',
+    title: ' Full Stack Developer (Belgium-based Company)',
+    date: 'June 2024 - July 2025',
     description:
-      'Currently working as A front-end developer on a Company in Belgium, working closely with the CEO and 2 senior engineers.',
+      'Currently working as a front-end developer for a Belgium-based company. Collaborating closely with the CEO and two senior engineers on product development and design optimization.',
     ic: '💼',
     currentYear: 'Present',
     companyName: 'Geniefacts',
@@ -12,7 +12,7 @@ export const timeLineData = [
     title: 'Lead Developer',
     date: 'December 2023 - December 2024',
     description:
-      'I just got hired on big project based on Las Vegas with a current team of 5. Other than this I currently work as a full-stack on a startup agency based on Canada.',
+      'Appointed as lead developer on a major project based in Las Vegas, working with a team of five. Simultaneously contributing as a full-stack developer for a Canadian startup agency, handling everything from UI development to backend integration.',
     ic: '💼',
     currentYear: 2024,
     companyName: 'Subsidium',
@@ -21,16 +21,16 @@ export const timeLineData = [
     title: 'Part-Time Developer',
     date: 'July 2023 - December 2023',
     description:
-      'Started to do part-time and project-based Freelance. During this time I somehow got a lot of clients both local and international.',
-    ic: '💻',
+      'Transitioned to part-time freelance and project-based work. During this period, I secured multiple clients—both local and international—working on a variety of front-end and full-stack projects.',
+    ic: '🕒',
     currentYear: 2023,
     companyName: 'Philippine',
   },
   {
-    title: 'Front-End Developer',
+    title: 'Front-End Developer (Germany-based Company)',
     date: 'July 2022 - July 2023',
     description:
-      'Right After Graduation, I land a job as a front-end developer on a company founded on Germany, the office is located in Baguio Philippines.',
+      'Started my professional career as a front-end developer for a Germany-founded company with an office in Baguio City, Philippines. This role gave me a solid foundation in production-level development and team collaboration.',
     ic: '💼',
     currentYear: 2022,
     companyName: 'MKBGIT solutions',
@@ -45,11 +45,11 @@ export const timeLineData = [
     companyName: 'STI Vigan',
   },
   {
-    title: 'Discovered Freelancing',
+    title: 'First Freelance Project',
     date: 'December 2021',
     description:
-      'December 2021, I Started to get my first client based in California. Created three landing pages for a NFT Projects and a full-stack ELearning system.',
-    ic: '💻',
+      'Landed my first freelance client based in California. Delivered three landing pages for NFT projects and built a full-stack e-learning system. This experience sparked my interest in freelancing and remote work.',
+    ic: '💡',
     currentYear: 2021,
     companyName: 'STI La Union',
   },
@@ -57,8 +57,8 @@ export const timeLineData = [
     title: 'Code Start',
     date: 'June 2018',
     description:
-      'December 2018, Started studying as Bachelor of Science in Computer Science. Write my first line of code',
-    ic: '💻',
+      'Began my journey in tech by enrolling in the Bachelor of Science in Computer Science program at STI College, Philippines. Wrote my first line of code during my first semester and immediately developed a passion for software development.',
+    ic: '👨‍💻',
     currentYear: 2018,
     companyName: 'STI La Union',
   },
