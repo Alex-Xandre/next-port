@@ -1,6 +1,6 @@
 export const timeLineData = [
   {
-    title: ' Full Stack Developer (Belgium-based Company)',
+    title: ' Full Stack Developer',
     date: 'June 2024 - July 2025',
     description:
       'Currently working as a front-end developer for a Belgium-based company. Collaborating closely with the CEO and two senior engineers on product development and design optimization.',
@@ -27,7 +27,7 @@ export const timeLineData = [
     companyName: 'Philippine',
   },
   {
-    title: 'Front-End Developer (Germany-based Company)',
+    title: 'Front-End Developer ',
     date: 'July 2022 - July 2023',
     description:
       'Started my professional career as a front-end developer for a Germany-founded company with an office in Baguio City, Philippines. This role gave me a solid foundation in production-level development and team collaboration.',
