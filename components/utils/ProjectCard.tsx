@@ -106,10 +106,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ data, onClick, selectedIndex,
 
             {!showFront && (
               <>
-                <div className='m-0  overflow-hidden relative bg-re'>
+                <div className='m-0  overflow-hidden relative dark:text-white'>
                   {data.testAccount && (
                     <div className='m-3 text-xs flex flex-col items-start gap-1 text-slate-500'>
-                      <h1 className='font-semibold underline mb-3 text-sm text-black'>Test Account</h1>
+                      <h1 className='font-semibold underline mb-3 text-sm text-black dark:text-white'>Test Account</h1>
                       <h2>Email/Username: {data.testAccount[0]}</h2>
                       <h2>Password: {data.testAccount[1]}</h2>
                     </div>
@@ -119,7 +119,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ data, onClick, selectedIndex,
                   <h2 className='text-base font-bold'>{data.title}</h2>
                   <p className='text-sm mt-1 flex gap-2 items-start'>
                     <span className='m-0'> 📖 </span>
-                    <span className='m-0 text-slate-500'>{data.description}</span>
+                    <span className='m-0 text-slate-500 dark:text-white dark:text-opacity-80'>{data.description}</span>
                   </p>
                   <p className='text-sm font-bold mt-5'>Key Features</p>
                   {data?.features?.map((x, index) => (
@@ -128,7 +128,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ data, onClick, selectedIndex,
                       className='flex text-sm gap-2 mt-1'
                     >
                       <span className='text-xs m-0 '>💼 </span>
-                      <span className='m-0 text-slate-500'>{x}</span>
+                      <span className='m-0 text-slate-500 dark:text-white dark:text-opacity-80'>{x}</span>
                     </p>
                   ))}
                 </div>
