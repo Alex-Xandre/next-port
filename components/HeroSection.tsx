@@ -142,11 +142,11 @@ const HeroSection = () => {
                   <div className='ml-6 w-full'>
                     <span className='font-bold text-sm flex justify-between items-center w-full'>
                       <span className='m-0'>{event.title}</span>
-                      <span className='m-0 px-1 py-0.5 rounded-md font-normal border shadow-sm  text-xs text-gray-500'>
+                      <span className='m-0 px-1 py-0.5 rounded-md font-normal border shadow-sm  text-xs text-gray-500 dark:text-black dark:bg-gray-200'>
                         {event.currentYear}
                       </span>
                     </span>
-                    <div className='italic text-xs text-gray-600'>{event.companyName}</div>
+                    <div className='italic text-xs text-gray-600 dark:text-white dark:opacity-80'>{event.companyName}</div>
                   </div>
                 </div>
               ))}
@@ -174,7 +174,7 @@ const ProjectCard = ({ data }: any) => {
     <div className='border shadow-sm rounded-md p-2 mt-3'>
       <h1 className='text-sm'>{data.title}</h1>
       <h2
-        className=' opacity-60 text-sm inline-flex group items-center hover:underline '
+        className=' opacity-60 text-sm inline-flex group items-center hover:underline dark:opacity-80 '
         onClick={handleVisitSite}
       >
         {data.web_link}
@@ -200,7 +200,7 @@ const ProjectCard = ({ data }: any) => {
             index: React.Key | null | undefined
           ) => (
             <div
-              className='text-[10px] m-0 rounded-md bg-blue-100 py-1 px-2 flex items-center gap-2'
+              className='text-[10px] m-0 rounded-md bg-blue-100 py-1 px-2 flex items-center gap-2 dark:text-black'
               key={index}
             >
               <p className='h-2 w-2 bg-green-500 rounded-full'></p> {x}

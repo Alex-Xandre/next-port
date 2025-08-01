@@ -37,7 +37,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ data, onClick, selectedIndex,
 
   return (
     <motion.div
-      className={`break-inside m-0  w-full group bg-gray-50  ${
+      className={`break-inside m-0  w-full group bg-gray-50 dark:bg-black   ${
         selectedIndex !== -1 && 'opacity-80 group-hover:opacity-100'
       }
       ${selectedIndex === dataIndex && '!opacity-100 '}
@@ -55,11 +55,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ data, onClick, selectedIndex,
         <div className='w-full'>
           <Carousel images={data.banner} />
 
-          <div className='bg-white z-10 p-4 w-full flex flex-col gap-5'>
+          <div className='bg-white z-10 p-4 w-full flex flex-col gap-5 dark:bg-opacity-10'>
             <div className='flex flex-wrap gap-2 mt-5'>
               {data.stack?.map((x, index) => (
                 <div
-                  className='text-[10px] m-0 rounded-md bg-blue-100 py-1 px-2 flex items-center gap-2'
+                  className='text-[10px] m-0 rounded-md bg-blue-100 py-1 px-2 flex items-center gap-2 dark:text-black'
                   key={index}
                 >
                   <p className='h-2 w-2 bg-green-500 rounded-full'></p> {x}
@@ -67,7 +67,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ data, onClick, selectedIndex,
               ))}
             </div>
             <h2 className='text-sm font-bold'>{data.title}</h2>
-            <p className='text-sm text-slate-500'>{data.description}</p>
+            <p className='text-sm text-slate-500 dark:text-white'>{data.description}</p>
 
             <div className='m-0 flex gap-3 h-full items-center justify-between'>
               <div className='m-0 flex gap-2 items-center'>

@@ -21,7 +21,7 @@ const ProjectSection = () => {
             <div
               className={`${
                 selectedCardIndex === index && 'm-auto bg-white shadow-md rounded-xl'
-              } flex flex-wrap content-start mb-4 overflow-hidden rounded-md  group border`}
+              } flex flex-wrap content-start mb-4 overflow-hidden rounded-md  group border dark:border-gray-700`}
               onClick={(e) => e.stopPropagation()}
             >
               <ProjectCard

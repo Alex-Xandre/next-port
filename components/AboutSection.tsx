@@ -43,7 +43,7 @@ const AboutSection = () => {
 
   return (
     <SectionContainer
-      cN='bg-gray-50 py-20 px-3 lg:px-0'
+      cN='bg-gray-50 py-20 px-3 lg:px-0  dark:bg-black/90 dark:text-white'
       id='about'
     >
       <Title
@@ -117,7 +117,7 @@ const AboutSection = () => {
       </motion.div>
 
       <motion.div
-        className='w-full lg:w-1/2 m-0 mt-24 border border-gray-50 p-4 rounded-xl'
+        className='w-full lg:w-1/2 m-0 mt-24 border border-gray-50 dark:border-0 p-4 rounded-xl'
         variants={containerVariantsLeft}
         ref={refLeft}
         initial='hidden'
@@ -143,7 +143,7 @@ const AboutSection = () => {
                   height={100}
                   className='w-8 h-8 object-contain'
                 />
-                <p className='hidden group-hover:block absolute -bottom-2 font-medium text-primary text-xs -right-2 bg-white'>
+                <p className='hidden group-hover:block absolute -bottom-2 font-medium text-primary text-xs -right-2 bg-white dark:text-black px-2 py-0.5 rounded-sm'>
                   {techs.alt}
                 </p>
               </div>
@@ -152,7 +152,7 @@ const AboutSection = () => {
         </div>
       </motion.div>
       <motion.div
-        className='w-full lg:w-1/2 m-0 mt-24 border border-gray-50 p-4 rounded-xl'
+        className='w-full lg:w-1/2 m-0 mt-24 border border-gray-50 p-4 rounded-xl dark:border-0'
         variants={containerVariantsRight}
         ref={refRight}
         initial='hidden'
@@ -163,7 +163,7 @@ const AboutSection = () => {
           text='Clients I work with'
           cN='mb-5 text-base'
         />
-        <div className='w-fit flex m-auto relative'>
+        <div className='w-fit flex m-auto relative dark:border-0'>
           <Image
             src='https://res.cloudinary.com/dgb3br9x6/image/upload/v1713776463/worldmap_nhvikp.png'
             width={300}
@@ -178,10 +178,10 @@ const AboutSection = () => {
           ${location.left} ${location.top} ${location.right} ${location.bottom}
             } flex flex-wrap items-center gap-1 group `}
             >
-              <div className='w-1 h-1 rounded-full bg-green-600 animate-pulse'></div>
-              <p className='bg-white rounded-xl px-1 text-[9px]'>{location.name}</p>
+              <div className='w-1.5 h-1.5 rounded-full bg-green-600 animate-pulse'></div>
+              <p className='bg-white rounded-xl px-1 text-[9px] dark:text-black'>{location.name}</p>
 
-              <p className='opacity-0 group-hover:opacity-100 w-24 px-2 text-[9px] transition-opacity ease-in-out right-0 absolute flex flex-shrink-0 bg-white rounded-xl'>
+              <p className='opacity-0 group-hover:opacity-100 w-24 px-2 text-[9px] transition-opacity ease-in-out right-0 absolute flex flex-shrink-0 bg-white dark:text-black rounded-xl'>
                 ✔️ {location.totalProjects} Projects
               </p>
             </div>
