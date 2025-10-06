@@ -13,9 +13,9 @@ const ProjectSection = () => {
   };
 
   return (
-    <SectionContainer cN="py-20 px-2" id="projects">
+    <SectionContainer cN="py-20 px-2 2xl:!mx-24" id="projects">
       <Title text=" Projects" />
-      <div className="masonry sm:masonry-sm md:masonry-md  xl:max-w-3/4 mt-10">
+      <div className="masonry sm:masonry-sm md:masonry-md 2xl:pl-32 mt-10">
         {projectData.map((x, index) => (
           <div key={index} className="m-0" onClick={() => setSelectedCardIndex(-1)}>
             <div

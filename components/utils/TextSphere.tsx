@@ -50,7 +50,7 @@ const TextShpere = () => {
 
   return (
     <>
-      <div className='text-shpere w-full overflow-hidden text-xs'>
+      <div className='text-shpere w-full overflow-hidden text-xs max-w-72 lg:max-w-full'>
         <span className='tagcloud'></span>
       </div>
     </>

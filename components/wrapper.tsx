@@ -13,7 +13,7 @@ const Wrapper = () => {
       <HeroSection />
       <AboutSection />
       <ProjectSection />
-      <TimeLineSection />
+      {/* <TimeLineSection /> */}
       <FooteSection />
     </MainContainer>
   );

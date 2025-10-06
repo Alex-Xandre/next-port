@@ -22,7 +22,6 @@ const containerVariantsRight = {
 };
 
 const AboutSection = () => {
-
   const [refTop, inViewTop] = useInView({
     triggerOnce: true,
     rootMargin: '0px 0px -100px 0px',
@@ -43,7 +42,7 @@ const AboutSection = () => {
 
   return (
     <SectionContainer
-      cN='bg-gray-50 py-20 px-3 lg:px-0  dark:bg-black/90 dark:text-white'
+      cN='bg-gray-50 py-20 px-3 lg:px-0  dark:bg-black/90 dark:text-white 2xl:!mx-24'
       id='about'
     >
       <Title
@@ -83,7 +82,7 @@ const AboutSection = () => {
         </h2>
 
         <h2 className='flex items-start gap-1'>
-          <span> 💼</span> Currently working as a FrontEnd Developer in a company in Belgium, Europe.
+          <span> 💼</span> Currently working as a Fullstack developer in a company in Belgium, Europe.
         </h2>
 
         <h2 className='text-sm font-semibold'>✔️ Successfully delivered 15+ international projects.</h2>

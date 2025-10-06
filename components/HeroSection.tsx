@@ -60,26 +60,6 @@ const HeroSection = () => {
   return (
     <SectionContainer id='home'>
       <div className='md:flex-1 m-0 flex flex-col lg:flex-row  gap-3 md:mt-0 w-full px-3 lg:px-0  pt-3 xl:pt-20 '>
-        <div className='m-0 mt-5 flex-1'>
-          <div className='text-sm font-medium flex items-center justify-between'>
-            <span className='m-0'>Recent Projects</span>
-            <Button
-              cN=' text-xs h-fit !bg-gray-800 !text-white opacity-80 hover:opacity-100'
-              text='View All Projects'
-              onClick={redirectProject}
-            />
-          </div>
-
-          <div className=' rounded flex-grow'>
-            {projectData.slice(0, 4).map((item) => (
-              <ProjectCard
-                data={item}
-                key={item}
-              />
-            ))}
-          </div>
-        </div>
-
         <div className=' pb-20 flex-1 w-full'>
           <TextShpere />
           <div className=' flex gap-3 items-center justify-center flex-wrap '>
@@ -125,20 +105,17 @@ const HeroSection = () => {
                   className='relative flex items-center m-0 group w-full  '
                   key={index}
                 >
-                  {/* Circle with conditional colors */}
                   <div
                     className={`w-3 h-3 rounded-full border-2 transition-all ease-in-out flex-shrink-0 ${
                       index === 0 ? 'bg-black border-gray-300' : 'bg-gray-300 border-gray-300'
                     } group-hover:bg-black `}
                   ></div>
 
-                  {/* Vertical line connecting events */}
                   <div
                     className={`absolute left-1.5 w-px h-12 top-6  transition-all ease-in-out
             ${index !== timeLineData.length - 1 ? 'bg-gray-300' : 'bg-transparent'}`}
                   ></div>
 
-                  {/* Event Content */}
                   <div className='ml-6 w-full'>
                     <span className='font-bold text-sm flex justify-between items-center w-full'>
                       <span className='m-0'>{event.title}</span>
@@ -146,7 +123,9 @@ const HeroSection = () => {
                         {event.currentYear}
                       </span>
                     </span>
-                    <div className='italic text-xs text-gray-600 dark:text-white dark:opacity-80'>{event.companyName}</div>
+                    <div className='italic text-xs text-gray-600 dark:text-white dark:opacity-80'>
+                      {event.companyName}
+                    </div>
                   </div>
                 </div>
               ))}
@@ -167,47 +146,3 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
-
-const ProjectCard = ({ data }: any) => {
-  const handleVisitSite = (e: any) => window.open(data?.web_link, '_blank');
-  return (
-    <div className='border shadow-sm rounded-md p-2 mt-3'>
-      <h1 className='text-sm'>{data.title}</h1>
-      <h2
-        className=' opacity-60 text-sm inline-flex group items-center hover:underline dark:opacity-80 '
-        onClick={handleVisitSite}
-      >
-        {data.web_link}
-        <span className='hidden group-hover:block'>
-          <CgArrowTopRight />
-        </span>
-      </h2>
-
-      <div className='flex flex-wrap gap-2 mt-5'>
-        {data.stack?.map(
-          (
-            x:
-              | string
-              | number
-              | bigint
-              | boolean
-              | React.ReactElement<any, string | React.JSXElementConstructor<any>>
-              | Iterable<React.ReactNode>
-              | React.ReactPortal
-              | Promise<React.AwaitedReactNode>
-              | null
-              | undefined,
-            index: React.Key | null | undefined
-          ) => (
-            <div
-              className='text-[10px] m-0 rounded-md bg-blue-100 py-1 px-2 flex items-center gap-2 dark:text-black'
-              key={index}
-            >
-              <p className='h-2 w-2 bg-green-500 rounded-full'></p> {x}
-            </div>
-          )
-        )}
-      </div>
-    </div>
-  );
-};
