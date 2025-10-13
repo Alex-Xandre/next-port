@@ -65,7 +65,7 @@ const HeroSection = () => {
           <div className=' flex gap-3 items-center justify-center flex-wrap '>
             <Button
               text='Browse Projects'
-              cN=' text-sm h-fit !bg-gray-800 !text-white opacity-80 hover:opacity-100 w-[calc(50%-10px)] md:w-fit'
+              cN=' text-sm h-fit !bg-gray-800 !text-white opacity-80 hover:opacity-100 w-[calc(100%-10px)] md:w-fit'
               onClick={redirectProject}
               icon={<SquareArrowOutUpRight className='h-3.5 ml-2' />}
             />
