@@ -141,7 +141,7 @@ const Appbar = () => {
      ${hasScrolled ? 'border-b border-gray-200' : ''}
     `}
     >
-      <div className='m-0   md:gap-4 pt-1  px-0 md:px-3 flex justify-between  '>
+      <div className='m-0   md:gap-4 pt-1  px-1 md:px-3 flex justify-between  '>
         <ul className='flex m-0 gap-3'>
           {Menu?.map((x, index) => {
             const isActive = x.url === activeId;

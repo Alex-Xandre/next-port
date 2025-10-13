@@ -18,7 +18,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <SidebarProvider>
         <body className={inter.className}>
           <Appbar />
-          <main className='flex flex-col lg:flex-row px-2 lg:pl-0'>
+          <main className='flex dark:bg-black flex-col lg:flex-row px-2 lg:pl-0'>
             <FixedSection />
             {children}
           </main>

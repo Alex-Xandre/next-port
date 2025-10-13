@@ -84,10 +84,20 @@ const AboutSection = () => {
         <h2 className='flex items-start gap-1'>
           <span> 💼</span> Currently working as a Fullstack developer in a company in Belgium, Europe.
         </h2>
-
-        <h2 className='text-sm font-semibold'>✔️ Successfully delivered 15+ international projects.</h2>
-        <h2 className='text-sm font-semibold'>✔️ Brought and assisted 5 startup ideas to life.</h2>
-        <h2 className='text-sm font-semibold'>✔️ Completed 35+ Philippine-based systems.</h2>
+        <div className='space-y-1 m-0'>
+          <div className='flex items-start m-0'>
+            <span className='mr-2 m-0'>✔️</span>
+            <h2 className='text-sm font-semibold leading-snug'>Successfully delivered 15+ international projects.</h2>
+          </div>
+          <div className='flex items-start m-0'>
+            <span className='mr-2 m-0'>✔️</span>
+            <h2 className='text-sm font-semibold leading-snug'>Brought and assisted 5 startup ideas to life.</h2>
+          </div>
+          <div className='flex items-start m-0'>
+            <span className='mr-2 m-0'>✔️</span>
+            <h2 className='text-sm font-semibold leading-snug'>Completed 35+ Philippine-based systems.</h2>
+          </div>
+        </div>
 
         <div className='w-full flex flex-wrap'>
           <p className='m-0 text-sm font-semibold w-full mb-3'>Social Links</p>

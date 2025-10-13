@@ -74,7 +74,7 @@ const HeroSection = () => {
               href='https://github.com/Alex-Xandre'
               target='_blank'
               rel='noopener noreferrer'
-              className=' bg-blue-100 font-[500] hover:bg-blue-200  hover:text-slate-800 ease-in-out  transition-all opacity-90 hover:opacity-100 md:w-fit py-3 px-4 rounded text-slate-800 m-0 flex align-center justify-center text-sm
+              className=' bg-blue-100 font-[500] hover:bg-blue-200  hover:text-slate-800 ease-in-out  transition-all opacity-90 hover:opacity-100 md:w-fit py-3 px-4 rounded text-slate-800 m-0 flex align-center  items-center justify-center text-sm
               w-[calc(50%-10px)] 
               '
             >
