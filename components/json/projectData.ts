@@ -92,7 +92,7 @@ export const projectData = [
   },
 
   {
-    title: 'MTP-Educational Assistance',
+    title: 'MTP-Educational As',
     banner: ['https://res.cloudinary.com/dfhhkd04c/image/upload/v1700539674/proj_1_fttl7o.png'],
     stack: ['MongoDB', 'Express', 'React', 'Node JS', 'Tailwind CSS'],
     description: 'Automated Scholarship Application System with Chat Feature.',

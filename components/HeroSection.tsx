@@ -59,13 +59,13 @@ const HeroSection = () => {
 
   return (
     <SectionContainer id='home'>
-      <div className='md:flex-1 m-0 flex flex-col lg:flex-row  gap-3 md:mt-0 w-full px-3 lg:px-0  pt-3 xl:pt-20 '>
+      <div className='md:flex-1 m-0 flex flex-col lg:flex-row  gap-3 md:mt-0 w-full  lg:px-0  pt-3 xl:pt-20 '>
         <div className=' pb-20 flex-1 w-full'>
           <TextShpere />
           <div className=' flex gap-3 items-center justify-center flex-wrap '>
             <Button
               text='Browse Projects'
-              cN=' text-xs h-fit !bg-gray-800 !text-white opacity-80 hover:opacity-100 w-[calc(50%-10px)] md:w-fit'
+              cN=' text-sm h-fit !bg-gray-800 !text-white opacity-80 hover:opacity-100 w-[calc(50%-10px)] md:w-fit'
               onClick={redirectProject}
               icon={<SquareArrowOutUpRight className='h-3.5 ml-2' />}
             />
@@ -74,7 +74,7 @@ const HeroSection = () => {
               href='https://github.com/Alex-Xandre'
               target='_blank'
               rel='noopener noreferrer'
-              className=' bg-blue-100 font-[500] hover:bg-blue-200 hover:text-slate-800 ease-in-out  transition-all opacity-90 hover:opacity-100 md:w-fit py-2 px-4 rounded text-slate-800 m-0 flex align-center justify-center text-xs
+              className=' bg-blue-100 font-[500] hover:bg-blue-200  hover:text-slate-800 ease-in-out  transition-all opacity-90 hover:opacity-100 md:w-fit py-3 px-4 rounded text-slate-800 m-0 flex align-center justify-center text-sm
               w-[calc(50%-10px)] 
               '
             >
@@ -85,7 +85,7 @@ const HeroSection = () => {
               href='https://www.linkedin.com/in/alexander-micua-04657a217/'
               target='_blank'
               rel='noopener noreferrer'
-              className='border bg-white font-[500] w-[calc(100%-10px)] items-center hover:bg-blue-200  hover:text-slate-800 ease-in-out  transition-all opacity-90 hover:opacity-100 md:w-fit py-2 px-4 rounded text-slate-800 m-0 flex align-center justify-center text-xs '
+              className='border bg-white font-[500] w-[calc(100%-10px)] items-center hover:bg-blue-200  hover:text-slate-800 ease-in-out  transition-all opacity-90 hover:opacity-100 md:w-fit py-3 px-4 rounded text-slate-800 m-0 flex align-center justify-center text-sm '
             >
               Linkedin
               <BsLinkedin className='h-3.5 ml-2' />

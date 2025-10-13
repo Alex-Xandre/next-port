@@ -62,7 +62,7 @@ const ProjectCard = ({ data }: any) => {
   return (
     <div className='w-full'>
       <div
-        className='text-xs lowercase hover:underline group flex items-center gap-1 text-start !font-normal cursor-pointer mt-2 *:m-0 transition-all duration-300 ease-in-out dark:text-white'
+        className='text-sm lowercase hover:underline group flex items-center gap-1 text-start !font-normal cursor-pointer mt-2 *:m-0 transition-all duration-300 ease-in-out dark:text-white'
         onClick={toggleActive}
       >
         <Image
@@ -89,7 +89,7 @@ const ProjectCard = ({ data }: any) => {
         }`}
       >
         <h2
-          className='opacity-60 text-[11px] italic inline-flex group items-center hover:underline dark:opacity-80 cursor-pointer gap-1 dark:text-white/80 '
+          className='opacity-60 text-sm italic inline-flex group items-center hover:underline dark:opacity-80 cursor-pointer gap-1 dark:text-white/80 '
           onClick={handleVisitSite}
         >
           {data?.web_link}
@@ -112,7 +112,7 @@ const ProjectCard = ({ data }: any) => {
               index: React.Key | null | undefined
             ) => (
               <div
-                className='text-[10px] m-0 rounded-md bg-blue-100 py-0.5 px-1 flex items-center gap-2 dark:text-black'
+                className='text-[11px] m-0 rounded-md bg-blue-100 py-0.5 px-1 flex items-center gap-2 dark:text-black'
                 key={index}
               >
                 <p className='h-2 w-2 bg-green-500 rounded-full'></p> {x}
