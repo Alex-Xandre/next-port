@@ -20,7 +20,7 @@ const FixedSection = () => {
   const toggleOpen = () => setOpen((prev) => !prev);
   return (
     <div
-      className={`m-0 mt-5 flex-1 w-54 lg:fixed left-0 top-7 z-50 bg-white border rounded-md lg:rounded-none lg:border-t-0 lg:!border-r p-4 lg:w-72 w-full dark:bg-black/80 transition-all duration-500 ease-in-out overflow-hidden ${
+      className={`m-0 mt-6 lg:ml-2 flex-1 w-54 lg:fixed left-0 top-7 z-50 bg-white border rounded-md lg:!border p-4 lg:w-72 w-full dark:bg-black/80 transition-all duration-500 ease-in-out overflow-hidden ${
         open ? 'h-screen' : 'max-h-[60px] !rounded-r-lg'
       }`}
     >
@@ -93,7 +93,7 @@ const ProjectCard = ({ data }: any) => {
           onClick={handleVisitSite}
         >
           {data?.web_link}
-          <CgArrowTopRight className='group-hover:translate-x-1 transition-transform duration-200 opacity-0 group-hover:opacity-100' />
+          <CgArrowTopRight className='group-hover:translate-x-1 transition-transform duration-200 opacity-0 group-hover:opacity-100 mr-3' />
         </h2>
         <div className='flex flex-wrap gap-2 mt-1'>
           {data.stack?.map(

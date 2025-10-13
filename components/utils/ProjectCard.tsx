@@ -81,7 +81,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ data, onClick, selectedIndex,
                 {data?.github && (
                   <Button
                     text='Source'
-                    cN='text-xs h-fit !bg-white  border shadow-sm hover:border-gray-500 opacity-80 hover:opacity-100'
+                    cN='text-xs h-fit !bg-white  border shadow-sm   hover:!bg-gray-50 !border-gray-200 opacity-80 hover:opacity-100'
                     onClick={handleVisitSource as any}
                     icon={<GithubIcon className='h-4 w-4 ml-2' />}
                   />

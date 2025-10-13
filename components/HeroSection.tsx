@@ -6,7 +6,7 @@ import TextShpere from './utils/TextSphere';
 import { projectData } from './json/projectData';
 import { CgArrowTopRight } from 'react-icons/cg';
 import { timeLineData } from './json/timeLineData';
-import { GithubIcon, SquareArrowOutUpRight } from 'lucide-react';
+import { GithubIcon, PhoneIcon, SquareArrowOutUpRight } from 'lucide-react';
 import { BsLinkedin } from 'react-icons/bs';
 
 const HeroSection = () => {
@@ -71,21 +71,19 @@ const HeroSection = () => {
             />
 
             <a
-              href='https://github.com/Alex-Xandre'
+              href='https://calendly.com/xndrmcua22/30min?back=1&month=2025-10'
               target='_blank'
               rel='noopener noreferrer'
-              className=' bg-blue-100 font-[500] hover:bg-blue-200  hover:text-slate-800 ease-in-out  transition-all opacity-90 hover:opacity-100 md:w-fit py-3 px-4 rounded text-slate-800 m-0 flex align-center  items-center justify-center text-sm
-              w-[calc(50%-10px)] 
-              '
+              className='border bg-white font-[500] w-[calc(100%-10px)] items-center hover:bg-gray-50  hover:text-slate-800 ease-in-out  transition-all opacity-90 hover:opacity-100 md:w-fit py-3 px-4 rounded text-slate-800 m-0 flex align-center justify-center text-sm '
             >
-              Github
-              <GithubIcon className='h-3.5 ml-2' />
+              Book a meeting
+              <PhoneIcon className='h-3.5 ml-2' />
             </a>
             <a
               href='https://www.linkedin.com/in/alexander-micua-04657a217/'
               target='_blank'
               rel='noopener noreferrer'
-              className='border bg-white font-[500] w-[calc(100%-10px)] items-center hover:bg-blue-200  hover:text-slate-800 ease-in-out  transition-all opacity-90 hover:opacity-100 md:w-fit py-3 px-4 rounded text-slate-800 m-0 flex align-center justify-center text-sm '
+              className='border bg-white font-[500] w-[calc(100%-10px)] items-center hover:bg-gray-50 hover:text-slate-800 ease-in-out  transition-all opacity-90 hover:opacity-100 md:w-fit py-3 px-4 rounded text-slate-800 m-0 flex align-center justify-center text-sm '
             >
               Linkedin
               <BsLinkedin className='h-3.5 ml-2' />

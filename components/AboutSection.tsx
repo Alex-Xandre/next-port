@@ -76,14 +76,15 @@ const AboutSection = () => {
         transition={{ delay: 0.5, duration: 0.1 }}
       >
         <h2 className='flex items-start gap-1'>
-          <span className='text-lg m-0 -ml-1'>🎓 </span> Graduated Last July 2022, worked on multiple projects for
+          <span className='text-lg m-0 -ml-1 mr-1'>🎓 </span> Graduated Last July 2022, worked on multiple projects for
           clients locally and internationally, helping them grow their startups and collaborating on future business
           ventures. With over 3 years of work experience and close training with a senior developer.
         </h2>
 
         <h2 className='flex items-start gap-1'>
-          <span> 💼</span> Currently working as a Fullstack developer in a company in Belgium, Europe.
+          <span className='mr-1'> 💼</span> Currently working as a Fullstack developer in a company in Belgium, Europe.
         </h2>
+
         <div className='space-y-1 m-0'>
           <div className='flex items-start m-0'>
             <span className='mr-2 m-0'>✔️</span>
@@ -99,24 +100,24 @@ const AboutSection = () => {
           </div>
         </div>
 
-        <div className='w-full flex flex-wrap'>
+        <div className='w-full flex flex-wrap flex-col lg:flex-row'>
           <p className='m-0 text-sm font-semibold w-full mb-3'>Social Links</p>
           {socialData.map((x, index: number) => (
             <p
               key={index}
-              className={`text-sm flex items-center group `}
+              className={`text-sm flex items-center group  m-0 gap-1`}
             >
-              <span className='h-1 rounded-full w-1 bg-green-500'></span>
+              <span className='h-1 rounded-full w-1 bg-green-500 m-0'></span>
               &nbsp;
               <a
                 href={x.url}
                 target='_blank'
                 rel='noopener noreferrer'
-                className='hover:underline'
+                className='hover:underline m-0'
               >
                 {x.name}
               </a>
-              <span className='hidden group-hover:block'>
+              <span className='hidden group-hover:block m-0'>
                 <ArrowUp />
               </span>{' '}
               &nbsp; &nbsp;
